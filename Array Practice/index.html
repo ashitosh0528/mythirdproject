@@ -1,0 +1,292 @@
+ <script>
+//   console.log(this);
+
+//   function add() {
+//     let sum = 2 + 2;
+//     console.log(sum);
+//     console.log(this);
+//   }
+//   add();
+
+//   const ashu = {
+//     name: "ashitosh",
+//     id: 20,
+//     features: function () {
+//       let sum = 2 + 2;
+//       console.log(sum);
+//       console.log(this);
+//     },
+//   };
+//   ashu.features();
+
+//   ////////////////////////////////// call() method  apply() bind()//////////////////////
+
+//   let obj = {
+//     name: "ashitosh",
+//     sirname: "shelar",
+//     feature: function (age) {
+//       console.log(
+//         `hello my name is ${this.name} ${this.sirname} i am ${age} years old`
+//       );
+//     },
+
+//   };
+//   obj.feature(23);
+//   let obj2 = {
+//     name: "sachin",
+//     sirname: "shelar",
+//   };
+// // call() method
+//   obj.feature.call(obj2, 35); 
+// // apply() method
+//   obj.feature.apply(obj2, [35]);
+// /////////////////// bind() methd  ////////////////////////////////
+//   let car={
+//     name:" thar",
+//     price:1800000
+//   }
+//   let car2={
+//     name:"range rover",
+//     price:10000000
+//   }
+
+// function speed(){
+//   console.log(`i have car which name is ${this.name} and price is ${this.price}`)
+// }
+
+// let myfun = speed.bind(car);
+// myfun();
+// let myfun2= speed.bind(car2);
+// myfun2();
+
+
+// // currying 
+//  function getsum(x){
+//   return(y)=>{
+//      return(z)=>{
+//         console.log(x+y+z)
+//      }
+//   }
+// }
+// getsum(5)(4)(3)
+
+
+
+// ///////////////// closer /////////////////////
+
+
+// const outerFunction=(a)=>{
+// let b=10;
+
+// const innerFunction = ()=>{
+// sum= a+b
+// console.log(sum)
+// }
+// innerFunction()
+// }
+// outerFunction(35)
+
+
+
+
+
+
+// // call back functions
+
+// function fun1(wait){
+//   console.log("hii i am ashitosh shelar")
+//   wait();
+// }
+// function fun2(){
+//   console.log(" i am 23 years old")
+// }
+// fun1(fun2);
+
+
+
+// //////////////////// constructor////////////////////////
+
+// function Student(firstname,lastname,age,clas){
+// this.Fname= firstname;
+// this.Lname= lastname;
+// this.ageno= age;
+// this.class= clas
+// }
+
+// let student1= new Student("ashitosh","shelar",23,12);
+// console.log(student1)
+
+//  -->
+
+
+// function sum(x){
+//       return (y)=>{
+//                return (z)=>{
+          
+//                  console.log(x+y+z)
+                
+//                }
+
+//       }
+// }
+
+// let add= sum(5)(4)(3)
+
+// add();
+
+
+// object destructuring
+
+// let obj ={
+
+//   name : "ashitosh",
+//   age : 20,
+//   // address:{
+//   //   city: "mumbai",
+//   //   pin:415012
+//   // }
+// }
+
+// let{name,age}=obj
+
+// document.write(name,age, lname="shelar")
+
+
+// // array destructuring
+
+
+// let array =[10,20,30,40,50]
+
+// let value = array[0]
+// let[val1,val2,val3,val4,val5]=array
+
+// console.log(val1,val2,val3,val4,val5)
+
+
+
+
+
+// // trmporal dead zon
+// // s=45;
+
+// // let s;
+
+
+
+
+
+
+// // weakset function
+
+// let a ={name : "ashitosh", age :35}
+// let b ={name:"saurabh",age :38 }
+
+// let x = new WeakSet([a,b])
+
+//  let y=x.add({type:"ashitosh"})
+// console.log(y)
+
+
+// // weakmap function 
+
+// let r = new WeakMap()
+
+// let ashitosh ={name : "ashitosh", age :35}
+// let sachin ={name : "ashitosh", age :35}
+
+// r.set(ashitosh ,"student")
+// r.set(sachin ,"asdfg")
+
+
+// console.log(r)
+
+
+
+// // generator function 
+// let e =[10,30,40,60]
+// function* xyz (){
+
+//   console.log("xyz")
+//   yield 10;
+//   console.log("xyz")
+//   yield 20;
+//   console.log("xyz")
+//   console.log("xyz")
+//   console.log("xyz")
+//   yield 30;
+
+// }
+//  let o =xyz();
+// console.log(o.next())
+// console.log(o.next())
+// console.log(o.next().value)
+
+
+
+// // class 
+// class student{
+// constructor(fname,lname,age){
+//   this.name=fname;
+// this.lname=lname;
+// this.age=age
+
+
+// }
+
+// }
+
+// let student1 = new student("ashu","shelar",34)
+
+// console.log(student1)
+
+
+
+// // rest parameter and spraed operator
+
+// function printMarks(name,...marks)
+// {
+// console.log(`${name} this are your marks :${marks}`)
+
+// }
+
+// let f =[10,20,30,40,50,60]
+// printMarks("ashitosh",...f)
+
+
+// // promise 
+
+//  let condition=false;
+// let prom = new Promise(function(resolve,reject){
+// if(condition){
+// resolve("hiii");
+// }else{
+//   reject("oops")
+// }
+// })
+// prom.then((res)=>{console.log(res)})
+
+// prom.catch((res)=>{console.log(res)})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
